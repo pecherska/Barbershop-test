@@ -44,13 +44,16 @@ h6 {
     
     --main-text-color: #555555;
     --title-text-color: #303030;
-    --secondary-text-color: rgba(157, 164, 189, 0.6);;
+    --social-link-hero-text-color: #303030;
+    --secondary-text-color: rgba(157, 164, 189, 0.6);
     --white-text-color: #FFFFFF;
+    --hero-text-color: #9DA4BD;
     
     --bg-menu: #FFFFFF;
     --bg-light: #FFFFFF;
     --bg-dark: #191C26;
     --bg-gray: #F7F7F7;
+    --bg-hero: rgba(25, 28, 38, 0.2);
 
     --main-font: "Open Sans",sans-serif;
     --secondary-font: "Raleway",sans-serif;
@@ -138,7 +141,7 @@ h6 {
 
     font-weight: 600;
     font-size: 12px;
-    line-height: 1,33;
+    line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--white-text-color);
  }
@@ -162,7 +165,7 @@ h6 {
  }
 
  .button {
-    width: 100%;
+    min-width: 160px;
     padding: 12px;
     font-weight: 600;
     line-height: 1.33;
@@ -177,4 +180,83 @@ h6 {
 
     transition: background-color var(--timing-func),
     border-color var(--timing-func);
+ }
+
+
+ /* Hero */
+ .hero {
+    background-color: var(--bg-hero);
+
+ }
+
+ .hero_list {
+    display: flex;
+    align-items: center;
+ }
+
+ .hero_item:not(:last-child) {
+    margin-right: 40px;
+ }
+
+ 
+ .social_link_hero {
+    color: var(--social-link-hero-text-color);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+ }
+
+ .social_link_hero:hover,
+ .social_link_hero:focus {
+     color: var(--accent-color);
+ }
+
+ .hero_subtitle {
+    margin-top: 184px;
+    margin-bottom: 20px;
+
+    color: var(--secondary-text-color);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+ }
+
+ .hero_title {
+    color: var(--white-text-color);
+    font-family: var(--secondary-font);
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    
+ }
+
+ .hero_text {
+    margin-top: 20px;
+    margin-bottom: 206px;
+
+    color: var(--hero-text-color);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+ }
+
+ .hero_btn {
+    display: flex;
+    justify-content: flex-end;
+    
+   
+ }
+
+ .hero_btn_list {
+    margin-bottom:40px ;
+    margin-right: 26px;
+    align-items: center;
+ }
+
+ .hero_btn_list:last-child {
+    margin-right: 0px;
  }
