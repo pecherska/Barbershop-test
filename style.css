@@ -146,6 +146,15 @@ h6 {
     color: var(--white-text-color);
  }
 
+ .nav_link:hover,
+ .nav_link:focus {
+   color: var(--accent-color);
+ }
+
+ .sidebar {
+   
+ 
+ }
  .header_phone {
     margin-right: 40px;
 
@@ -192,6 +201,10 @@ h6 {
  .hero_list {
     display: flex;
     align-items: center;
+    padding-top: 36px;
+    padding-bottom: 37px;
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: left bottom;
  }
 
  .hero_item:not(:last-child) {
@@ -210,6 +223,26 @@ h6 {
      color: var(--accent-color);
  }
 
+
+ .sidebar {
+   display: flex;
+   align-items: flex-end;
+   z-index: 10;
+   width: 90px;
+   padding-left: 25px;
+   padding-bottom: 40px;
+ }
+.hero_container {
+   display: flex;
+}
+
+ .hero_main_page {
+   margin-top: 184px;
+   margin-bottom: 206px;
+   margin-left: 100px;
+   
+ }
+
  .hero_subtitle {
     margin-top: 184px;
     margin-bottom: 20px;
@@ -222,6 +255,8 @@ h6 {
     text-transform: uppercase;
 
  }
+
+ 
 
  .hero_title {
     color: var(--white-text-color);
@@ -246,7 +281,10 @@ h6 {
 
  .hero_btn {
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+      bottom: 40px;
+      right: 39px;
     
    
  }
