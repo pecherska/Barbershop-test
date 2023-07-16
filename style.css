@@ -110,8 +110,8 @@ h6 {
 
  /* Header */
  .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: var(--bg-dark);
  }
  .header_container {
@@ -125,6 +125,11 @@ h6 {
     margin-left: auto;
  }
 
+   .logo {
+      width: 68px;
+      height: 55px;
+      color: var(--social-link-hero-text-color);
+   }
 
  .nav_list {
     display: flex;
@@ -298,3 +303,76 @@ h6 {
  .hero_btn_list:last-child {
     margin-right: 0px;
  }
+
+
+/* Section Masters */
+
+.masrets-subtitle {
+   color: var(--title-text-color);
+   font-weight: 600;
+   font-size: 11px;
+   line-height: 1.36;
+   letter-spacing: 0.01em;
+
+
+   margin-left: 135px;
+   text-transform: uppercase;
+}
+
+.masters-title {
+   color: var(--title-text-color);
+   font-weight: 700;
+   font-size: 42px;
+   line-height: 1.67;
+   letter-spacing: 0.05em;
+
+   margin-bottom: 44px;
+}
+
+/* .masters-tumb {
+   position: relative;
+   cursor: context-menu;
+   
+   overflow: hidden;
+
+} */
+
+.master-list {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+
+   justify-content: center;
+   /* margin-top: -30px;
+   margin-right: -30px; */
+   
+}
+
+.master-item {
+   /* flex-basis: calc(100% /3 - 30px);
+   margin-top: 30px;
+   margin-right: 30px; */
+   margin-right: 30px;
+}
+
+.social-list {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+
+.social-icon {
+   width: 20px;
+   height: 20px;
+}
+
+.social-link {
+
+   width: 44px;
+   height: 44px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
